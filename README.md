@@ -2,7 +2,7 @@
 
 Estudante de Engenharia de Software. Faço sistemas web, quase sempre com Laravel no back-end e React ou Vue no front.
 
-Gosto mais de projeto que alguém realmente usa no dia a dia. O site da paróquia aqui de Pitanga, por exemplo, hoje é atualizado pela própria secretaria, sem precisar me chamar. Ultimamente tenho mexido bastante com Next.js, TypeScript e Supabase.
+Fora da faculdade, o que mais tenho estudado é agentes de IA: como montar um, ligar ele a ferramentas e APIs e entender onde ele realmente ajuda num sistema de verdade (e onde só atrapalha). Estou indo a fundo nisso.
 
 <br>
 
@@ -10,28 +10,36 @@ Gosto mais de projeto que alguém realmente usa no dia a dia. O site da paróqui
 
 <br>
 
-## Alguns projetos
+## Orbit RH · meu TCC
 
-**[Paróquia Online](https://github.com/JoaoVitorGrando/Paroquia.Online)**  
-Site institucional da Paróquia Nossa Senhora da Glória, com horários de missa, eventos, catequese e avisos, e um painel para a secretaria cuidar do conteúdo.  
-`Laravel 10` `PHP 8.1` `Blade` `Bootstrap 5` · [no ar](https://paroquia-online.site.je)
+**[orbit-rh.online](https://orbit-rh.online)**
 
-**[FAGU](https://github.com/JoaoVitorGrando/dumptraillerr)**  
-Plataforma de aluguel de trailers para o mercado de Seattle. MVP em produção, com reservas e pagamento.  
-`Next.js 15` `TypeScript` `Supabase` `Prisma` `Stripe` `Tailwind` · [no ar](https://fagu.vercel.app)
+O Orbit RH é o sistema que estou desenvolvendo como TCC. A ideia é ajudar empresas a manter o pessoal engajado sem depender de planilha e de e-mail que ninguém lê.
 
-**[Engaje RH](https://github.com/JoaoVitorGrando/EngajeRH)**  
-Sistema de RH com API em Laravel autenticada por token e front separado em React.  
-`Laravel` `Sanctum` `React` `Vite` `SQLite`
+Do lado do colaborador:
 
-**[3C Sports](https://github.com/JoaoVitorGrando/Ecom-3Csports)** · **[API Dogs](https://github.com/JoaoVitorGrando/API-dogs)**  
-Uma loja virtual e um app consumindo API, os dois feitos pra praticar Vue a fundo.  
-`Vue 3` `Composition API` `Pinia` `Vue Router`
+- check-in diário
+- metas com prazo e pontuação, com envio de comprovante na hora de concluir
+- pontos que viram recompensas (o resgate passa por aprovação do RH)
+- feedback para a empresa, podendo ser anônimo e marcado como urgente
+- mural de comunicados
 
-**[Sistema de Tarefas](https://github.com/JoaoVitorGrando/Sistema-de-Tarefas)**  
-Gerenciador de tarefas com login, onde cada usuário cuida só das próprias tarefas.  
-`Laravel` `PHP` `Blade`
+Do lado do RH tem um painel com dashboard, ranking de engajamento, cadastro de usuários, metas e recompensas, fila de resgates pendentes e os feedbacks urgentes separados do resto.
+
+Por baixo, é uma API em Laravel com autenticação por token (Sanctum) e controle de acesso por perfil. As regras de negócio ficam em services e as notificações por e-mail rodam em fila. O front é uma SPA em React com Vite.
+
+`Laravel` `Sanctum` `React` `Vite` `Queues` · [código](https://github.com/JoaoVitorGrando/EngajeRH)
 
 <br>
 
-Tem outras coisas aqui que são exercício de faculdade e de curso, deixei públicas mesmo assim pra mostrar o caminho.
+## Paróquia Online
+
+**[paroquia-online.site.je](https://paroquia-online.site.je)**
+
+Site da Paróquia Nossa Senhora da Glória, aqui de Pitanga (PR). Reúne horários de missa, eventos, grupos, catequese e avisos num lugar fácil de abrir no celular. A secretaria atualiza tudo por um painel administrativo, sem precisar me chamar.
+
+`Laravel 10` `PHP 8.1` `Blade` `Bootstrap 5` · [código](https://github.com/JoaoVitorGrando/Paroquia.Online)
+
+<br>
+
+O resto dos repositórios é exercício de faculdade e de curso. Deixei público mesmo assim, pra mostrar o caminho.
