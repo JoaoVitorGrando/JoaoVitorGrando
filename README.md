@@ -42,4 +42,16 @@ Site da Paróquia Nossa Senhora da Glória, aqui de Pitanga (PR). Reúne horári
 
 <br>
 
+## FAGU
+
+**[fagu.vercel.app](https://fagu.vercel.app)**
+
+MVP que fiz para um cliente de Seattle (EUA): uma plataforma de aluguel de trailers que junta quem aluga, os donos dos trailers e os motoristas que fazem a entrega. A reserva confere a disponibilidade e já cobra pelo Stripe antes de confirmar.
+
+Por enquanto é só o MVP. A ideia é dar continuidade no projeto no ano que vem.
+
+`Next.js 15` `TypeScript` `Supabase` `Prisma` `Stripe` `Tailwind` · [código](https://github.com/JoaoVitorGrando/dumptraillerr)
+
+<br>
+
 O resto dos repositórios é exercício de faculdade e de curso. Deixei público mesmo assim, pra mostrar o caminho.
